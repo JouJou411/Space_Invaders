@@ -44,7 +44,7 @@ public class SpaceInvader implements GLEventListener {
     private static final JMenu jMAcerca = new JMenu();
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Helicoptero");
+        JFrame frame = new JFrame("Space Invaders");
 
         jMOriginal.setText("Original");
         jMenuBar.add(jMOriginal);
@@ -1849,7 +1849,7 @@ public class SpaceInvader implements GLEventListener {
     public static synchronized void sonidoFondo() {
         new Thread(new Runnable() {
             public void run() {
-                File d = new File("src/sonidos/helicoptero.wav");
+                File d = new File("src/sonidos/NaveEspecial.wav");
                 try {
                     clipFondo = AudioSystem.getClip();
                     AudioInputStream inputStream = AudioSystem.getAudioInputStream(d);
